@@ -2,19 +2,22 @@
    This file holds only the dealt theme (start.mjs css, as printed), the page CSS inside the visuals and
    the few lines that undo the shared smoke stylesheet (smoki-base) where it reaches the system. */
 
-/* the theme: node start.mjs css --page software --palette paper-grey-brass --type host --radius soft */
+/* the theme: the block node start.mjs css --page software --palette paper-grey-brass --type host --radius soft
+   printed, its values set to the smokes' house palette (СМ-04) and one font, Inter (brief 4: every variant
+   shares colours and font, only the layout differs); inverse tokens light, lit ground neutral */
 :root {
-  --p-bg: #e8e8e3; --p-surface: #dcdcd6; --p-ink: #181715; --p-muted: #5c5b56;
-  --p-accent: #bfb21a; --p-accent-ink: #181715; --p-action: #181715; --p-action-ink: #e8e8e3;
-  --p-inv-bg: #181715; --p-inv-surface: #242321; --p-inv-ink: #e8e8e3; --p-inv-muted: #91908d;
-  --p-inv-accent: #bfb21a; --p-inv-accent-ink: #181715; --p-inv-action: #bfb21a; --p-inv-action-ink: #181715;
-  --font-display: "Host Grotesk", system-ui, sans-serif;
-  --font-text: "Host Grotesk", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --p-bg: #fcfcfc; --p-surface: #f7f8f9; --p-ink: #05080b; --p-muted: #5c646f;
+  --p-accent: #006acf; --p-accent-ink: #ffffff; --p-action: #006acf; --p-action-ink: #ffffff;
+  --p-inv-bg: #f7f8f9; --p-inv-surface: #ffffff; --p-inv-ink: #05080b; --p-inv-muted: #5c646f;
+  --p-inv-accent: #006acf; --p-inv-accent-ink: #ffffff; --p-inv-action: #006acf; --p-inv-action-ink: #ffffff;
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-text: "Inter", system-ui, sans-serif;
+  --font-mono: "Inter", system-ui, sans-serif;
   --display-weight: 500;
   --display-tracking: -0.035em;
   --display-tracking-xl: -0.04em;
 }
+:root[data-ground] { --ground-bg: #f7f8f9; --ground-surface: #ffffff; --ground-ink: #05080b; --ground-muted: #5c646f; --ground-accent: #dfe1e5; }
 
 /* page CSS inside the visuals: the drawn render fills the hero's stage (the window on a desktop, the
    client's phone alone on a phone) and each card's drawing its panel; their words in the text face */
