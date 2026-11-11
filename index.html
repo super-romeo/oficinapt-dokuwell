@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Para pequenas oficinas: orçamento por SMS ou email aprovado no telemóvel, ordem de reparação com peças e mão de obra e histórico por matrícula.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,38 +77,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Oficina Simples</a></div>
-  <nav class="top"><a href="#oque" data-ev="click_nav_oque">O que obtém</a><a href="price.html" data-ev="click_nav_preco">Preço</a><a href="#exemplo" data-ev="click_nav_exemplo">Exemplo</a><a href="#start" data-ev="click_nav_start">Começar</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Oficina Simples</a>
+  <nav><a href="#oque" data-ev="click_nav_oque">O que obtém</a><a href="price.html" data-ev="click_nav_preco">Preço</a><a href="#exemplo" data-ev="click_nav_exemplo">Exemplo</a><a href="#start" data-ev="click_nav_start">Começar</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>O cliente aprova o orçamento no telemóvel — e a ordem de reparação já está aberta</h1>
-    <p class="sub">Para pequenas oficinas de mecânica e multimarca: abre a ordem de reparação pela matrícula, prepara o orçamento com peças e mão de obra, o cliente aprova no telemóvel sem se deslocar e o histórico da viatura fica guardado para a próxima visita.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Eu preciso disso</a>
-    <p class="cta-note">Serviço em preparação · Esta página não aceita pagamentos</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Para pequenas oficinas de mecânica</p>
+      <h1 class="rise" style="--i:1" data-len="long">O cliente aprova o orçamento no telemóvel&nbsp;<span class="soft">— e a ordem de reparação já está aberta</span></h1>
+      <p class="rise" style="--i:2">Para pequenas oficinas de mecânica e multimarca: abre a ordem de reparação pela matrícula, prepara o orçamento com peças e mão de obra, o cliente aprova no telemóvel sem se deslocar e o histórico da viatura fica guardado para a próxima visita.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Eu preciso disso</a>
+      <p class="meta rise" style="--i:4">Serviço em preparação · Esta página não aceita pagamentos</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="155" font-size="40" font-weight="600" fill="#0a1524">Ordem de reparação</text><line x1="120" y1="200" x2="1080" y2="200" stroke="#dde2ea" stroke-width="3" /><rect x="120" y="250" width="44" height="44" rx="8" fill="#12397a" /><text x="190" y="282" font-size="32" fill="#0a1524">pela matrícula</text><rect x="120" y="370" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="190" y="402" font-size="32" fill="#0a1524">mão de obra</text><rect x="120" y="490" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="190" y="522" font-size="32" fill="#0a1524">no telemóvel</text><rect x="700" y="250" width="360" height="400" rx="20" fill="#dfe8f7" /><text x="730" y="320" font-size="34" font-weight="600" fill="#0a1524">Histórico</text><rect x="730" y="370" width="280" height="28" rx="8" fill="#ffffff" /><rect x="730" y="430" width="200" height="28" rx="8" fill="#b9c3d2" /><rect x="730" y="490" width="300" height="28" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="730" y="550" width="160" height="28" rx="8" fill="#dde2ea" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Para</dt><dd>Pequenas oficinas</dd></div>
+      <div><dt>Ordem</dt><dd>Ordem de reparação</dd></div>
+      <div><dt>Como</dt><dd>Abre a ordem</dd></div>
+      <div><dt>Preparação</dt><dd>Serviço em preparação</dd></div>
+    </dl>
+  </section>
 
   <section id="oque" data-view="features_view">
-    <h2>O que obtém</h2>
-    <div class="grid">
-      <div class="card"><b>Ordem de reparação</b><span>Abertura pela matrícula, com marca, modelo, quilometragem e histórico da viatura.</span><br><a class="btn" href="price.html" data-ev="feature_or">Eu preciso disso</a></div>
-      <div class="card"><b>Orçamento com aprovação</b><span>Enviado por SMS ou email; o cliente aprova ou ajusta antes da intervenção.</span><br><a class="btn" href="price.html" data-ev="feature_orcamento">Eu preciso disso</a></div>
-      <div class="card"><b>Peças e mão de obra</b><span>Peças, horas e trabalhos na ordem, com o total sempre à vista.</span><br><a class="btn" href="price.html" data-ev="feature_pecas">Eu preciso disso</a></div>
-      <div class="card"><b>Histórico por matrícula</b><span>Todas as intervenções de cada viatura, prontas na próxima visita.</span><br><a class="btn" href="price.html" data-ev="feature_historico">Eu preciso disso</a></div>
+    <div class="stack"><h2>O que obtém</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><text x="80" y="110" font-size="34" font-weight="600" fill="#0a1524">Ordem de reparação</text><text x="80" y="165" font-size="30" fill="#566174">pela matrícula</text><rect x="70" y="220" width="240" height="300" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="490" y="220" width="240" height="300" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="96" y="260" width="180" height="20" rx="8" fill="#dde2ea" /><rect x="96" y="300" width="140" height="20" rx="8" fill="#b9c3d2" /><rect x="96" y="340" width="160" height="20" rx="8" fill="#dfe8f7" /><rect x="516" y="260" width="170" height="20" rx="8" fill="#dde2ea" /><rect x="516" y="300" width="120" height="20" rx="8" fill="#12397a" /><rect x="516" y="340" width="150" height="20" rx="8" fill="#b9c3d2" /><line x1="330" y1="370" x2="460" y2="370" stroke="#12397a" stroke-width="6" /><polygon points="460,358 488,370 460,382" fill="#12397a" /></svg></div>
+        <h3>Ordem de reparação</h3><p>Abertura pela matrícula, com marca, modelo, quilometragem e histórico da viatura.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_or">Eu preciso disso</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="100" y="120" font-size="34" font-weight="600" fill="#0a1524">Orçamento com aprovação</text><text x="100" y="170" font-size="30" fill="#566174">no telemóvel</text><rect x="250" y="230" width="300" height="280" rx="36" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="272" y="258" width="256" height="170" rx="12" fill="#dfe8f7" /><rect x="292" y="284" width="180" height="28" rx="8" fill="#ffffff" /><rect x="292" y="328" width="140" height="22" rx="8" fill="#b9c3d2" /><circle cx="400" cy="468" r="16" fill="#12397a" /></svg></div>
+        <h3>Orçamento com aprovação</h3><p>Enviado por SMS ou email; o cliente aprova ou ajusta antes da intervenção.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_orcamento">Eu preciso disso</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="100" y="130" font-size="34" font-weight="600" fill="#0a1524">Peças e mão de obra</text><text x="100" y="185" font-size="30" fill="#566174">sempre à vista</text><line x1="120" y1="480" x2="660" y2="480" stroke="#dde2ea" stroke-width="3" /><rect x="160" y="320" width="70" height="160" fill="#dfe8f7" /><rect x="280" y="250" width="70" height="230" fill="#12397a" /><rect x="400" y="360" width="70" height="120" fill="#b9c3d2" /><rect x="520" y="290" width="70" height="190" fill="#dde2ea" /></svg></div>
+        <h3>Peças e mão de obra</h3><p>Peças, horas e trabalhos na ordem, com o total sempre à vista.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_pecas">Eu preciso disso</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="100" y="130" font-size="34" font-weight="600" fill="#0a1524">Histórico por matrícula</text><text x="100" y="185" font-size="30" fill="#566174">próxima visita</text><rect x="100" y="250" width="340" height="22" rx="8" fill="#dde2ea" /><rect x="100" y="300" width="260" height="22" rx="8" fill="#b9c3d2" /><rect x="100" y="350" width="300" height="22" rx="8" fill="#dde2ea" /><rect x="100" y="400" width="200" height="22" rx="8" fill="#dfe8f7" /><circle cx="560" cy="400" r="52" fill="#dfe8f7" /><polyline points="536,400 552,418 588,376" fill="none" stroke="#12397a" stroke-width="6" /></svg></div>
+        <h3>Histórico por matrícula</h3><p>Todas as intervenções de cada viatura, prontas na próxima visita.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_historico">Eu preciso disso</a>
+      </article>
     </div>
   </section>
 
-  <section id="exemplo" data-view="example_view">
-    <h2>Exemplo (dados fictícios)</h2>
-    <p class="fine">Oficina de dois mecânicos em Braga. Um carro chega com ruído na travagem: o mecânico abre a ordem pela matrícula, encontra pastilhas e discos gastos e envia o orçamento por SMS. O cliente aprova no telemóvel às 10h20, o trabalho começa, e à tarde a fatura sai da ordem de reparação.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Escolher o plano</a>
+  <section id="exemplo" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Exemplo</h2>
+      <p>Oficina de dois mecânicos em Braga. Um carro chega com ruído na travagem: o mecânico abre a ordem pela matrícula, encontra pastilhas e discos gastos e envia o orçamento por SMS. O cliente aprova no telemóvel às 10h20, o trabalho começa, e à tarde a fatura sai da ordem de reparação.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Escolher o plano</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="200" y1="150" x2="1000" y2="150" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="960" cy="150" r="22" fill="#12397a" /><text x="240" y="220" font-size="30" font-weight="600" text-anchor="middle" fill="#0a1524">na travagem</text><text x="600" y="220" font-size="30" font-weight="600" text-anchor="middle" fill="#0a1524">por SMS</text><text x="960" y="220" font-size="30" font-weight="600" text-anchor="middle" fill="#0a1524">no telemóvel</text><rect x="120" y="300" width="960" height="400" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="380" font-size="36" font-weight="600" fill="#0a1524">ordem de reparação</text><rect x="170" y="450" width="64" height="64" rx="10" fill="#dfe8f7" /><rect x="270" y="450" width="64" height="64" rx="10" fill="#dfe8f7" /><rect x="370" y="450" width="64" height="64" rx="10" fill="#12397a" /><rect x="470" y="450" width="64" height="64" rx="10" fill="#dfe8f7" /><rect x="570" y="450" width="64" height="64" rx="10" fill="#dfe8f7" /><rect x="670" y="450" width="64" height="64" rx="10" fill="#dfe8f7" /><text x="170" y="600" font-size="32" fill="#566174">o cliente aprova</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Como funciona</h2>
-    <p>Numa pequena oficina, cada carro passa pelo mesmo caminho: chega, é diagnosticado, o cliente recebe um orçamento, aprova ou não, a reparação é feita e no fim sai a fatura. Muitas vezes esse caminho vive em papel, em mensagens de telemóvel e na memória do dono da oficina.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Como funciona</h2></div>
+    <div class="stack">
+      <p>Numa pequena oficina, cada carro passa pelo mesmo caminho: chega, é diagnosticado, o cliente recebe um orçamento, aprova ou não, a reparação é feita e no fim sai a fatura. Muitas vezes esse caminho vive em papel, em mensagens de telemóvel e na memória do dono da oficina.</p>
     <p>O passo mais demorado é o orçamento. Telefonar ao cliente, explicar o que se encontrou, esperar que ele ligue de volta, voltar a explicar o preço — enquanto o carro ocupa um elevador e o mecânico espera. E quando o cliente diz depois que não aprovou aquela peça, não há registo do que foi combinado.</p>
     <p>O serviço começa pela ordem de reparação. Abre-se pela matrícula, com marca, modelo e quilometragem, e se a viatura já veio à oficina aparece logo o histórico das intervenções anteriores. O mecânico regista o diagnóstico e os trabalhos a fazer.</p>
     <p>A partir da ordem prepara-se o orçamento, com peças, mão de obra e o total. O cliente recebe-o por SMS ou email com uma ligação, e aprova, recusa ou ajusta cada linha no telemóvel, sem se deslocar. A aprovação fica registada com a data e a hora.</p>
@@ -114,31 +148,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Começar leva uma tarde: os dados da oficina, os mecânicos, a tabela de mão de obra e as peças mais usadas. O serviço funciona no navegador, no computador da receção e no telemóvel dos mecânicos, sem instalações.</p>
     <p>No fim do mês vê-se quantas ordens foram abertas, quantos orçamentos foram aprovados ou recusados e quanto demorou cada reparação, o que ajuda a organizar o trabalho e os elevadores.</p>
     <p>O serviço destina-se a pequenas oficinas de mecânica e multimarca em Portugal. Está em preparação: primeiro verificamos se as oficinas precisam dele. A faturação certificada continua no programa da oficina, e a oficina continua responsável pelos trabalhos e documentos.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Perguntas frequentes</h2>
-    <h3>Para quem é?</h3>
-    <p>Para pequenas oficinas de mecânica e multimarca em Portugal.</p>
-    <h3>Como é que o cliente aprova o orçamento?</h3>
-    <p>Por uma ligação recebida por SMS ou email, aprovando, recusando ou ajustando cada linha no telemóvel.</p>
-    <h3>Fica registado o que o cliente aprovou?</h3>
-    <p>Sim, com a data e a hora de cada aprovação.</p>
-    <h3>E a faturação?</h3>
-    <p>A ordem de reparação segue para o programa de faturação certificado que a oficina já usa.</p>
-    <h3>Já posso usar?</h3>
-    <p>Ainda não. O serviço está em preparação e estamos a verificar se as oficinas precisam dele.</p>
+    <div class="stack"><h2>Perguntas frequentes</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Para quem é?</h3><p>Para pequenas oficinas de mecânica e multimarca em Portugal.</p></div>
+      <div class="split flip"><h3>Como é que o cliente aprova o orçamento?</h3><p>Por uma ligação recebida por SMS ou email, aprovando, recusando ou ajustando cada linha no telemóvel.</p></div>
+      <div class="split flip"><h3>Fica registado o que o cliente aprovou?</h3><p>Sim, com a data e a hora de cada aprovação.</p></div>
+      <div class="split flip"><h3>E a faturação?</h3><p>A ordem de reparação segue para o programa de faturação certificado que a oficina já usa.</p></div>
+      <div class="split flip"><h3>Já posso usar?</h3><p>Ainda não. O serviço está em preparação e estamos a verificar se as oficinas precisam dele.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Adicione a sua oficina</h2>
-    <p><label>Número de mecânicos<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— escolha —</option><option>1</option><option>2–3</option><option>4–6</option><option>Mais de 6</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Começar</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Adicione a sua oficina</h2>
+    </div>
+    <div class="tile stack">
+      <label>Número de mecânicos<select data-ev-focus="form_start"><option value="">— escolha —</option><option>1</option><option>2–3</option><option>4–6</option><option>Mais de 6</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Começar</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Oficina Simples</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacidade</a></p>
-  <p class="muted">Ordens de reparação e orçamentos para a sua oficina. A oficina continua responsável pelos trabalhos e pela faturação certificada.</p>
+  <p>Ordens de reparação e orçamentos para a sua oficina. A oficina continua responsável pelos trabalhos e pela faturação certificada.</p>
 </div></footer>
 
 </body>
